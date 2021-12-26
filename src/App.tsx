@@ -4,14 +4,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hello react app
         </p>
       </header>
-    </div>
+      <section>
+        This is body section
+      </section>
+    </main>
   );
 }
 
