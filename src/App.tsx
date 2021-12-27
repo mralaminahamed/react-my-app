@@ -1,15 +1,12 @@
 // import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import Navigation from './Components/Navitgation';
 
 function App() {
   return (
     <main className="main">
-      <header className="header">
-        <p>
-          Hello react app
-        </p>
-      </header>
+      <Navigation/>
       <section className='container'>
         This is body section
       </section>
