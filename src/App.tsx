@@ -1,7 +1,7 @@
 // import React from 'react';
-// import logo from './logo.svg';
-import "./App.scss";
-import Navigation from './Components/Navitgation';
+// import logo from '././Assets/images/logo.svg';
+import "./Assets/sass/App.scss";
+import Navigation from './Assets/ts/Components/Navitgation';
 
 function App() {
   return (
