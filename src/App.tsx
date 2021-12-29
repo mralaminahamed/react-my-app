@@ -5,12 +5,10 @@ import Navigation from './Components/Navitgation';
 
 function App() {
   return (
-    <main className="main">
-      <Navigation/>
-      <section className='container'>
-        This is body section
-      </section>
-    </main>
+		<main className="main">
+			<Navigation />
+			<section className="container">This is body section</section>
+		</main>
   );
 }
 
