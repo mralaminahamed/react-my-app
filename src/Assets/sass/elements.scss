@@ -1,7 +1,6 @@
 
 html {
-  /* background-color: #FBFBFB; */
-  background-color: rgba(0,0,0,.03);
+  background-color: rgba(0,0,0,.05);
   box-sizing: border-box;
 
   font-family: var(--font-family-sans-serif);
@@ -16,7 +15,7 @@ html {
 main {
   width: 100%;
 
-  min-height: 100vh;
+  min-height: calc(100vh - calc(var(--header-height) + var(--footer-height)));
   height: auto;
 
   margin: 0 auto;
