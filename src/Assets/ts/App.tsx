@@ -21,12 +21,16 @@ function Products() {
 function App() {
 	return (
 		<>
-			<Navigation />
 			<BrowserRouter>
+				<Navigation />
 				<main className="main">
 					<section className="container">
 						<Routes>
-							<Route path="/" element={<Home />}>
+							<Route path="/" element={<Home />} />
+							<Route path="/about" element={<About />} />
+							<Route path="/products" element={<Products />} />
+
+							{/* <Route path="/" element={<Home />}>
 								<Route path="about" element={<About />} />
 								<Route path="products" element={<Products />} />
 								<Route
@@ -37,10 +41,8 @@ function App() {
 										</main>
 									}
 								/>
-							</Route>
+							</Route> */}
 						</Routes>
-						, This is body section This is body section
-						<br />
 					</section>
 				</main>
 				<Footer />

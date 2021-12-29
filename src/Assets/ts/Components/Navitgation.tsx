@@ -10,11 +10,11 @@ export default function Navigation() {
 							src="https://diviedge.com/layout-design/design-005/wp-content/uploads/sites/4/2021/01/Logo.png"
 							alt="logo"
 						/>
-						Anatomy
+						{/* Anatomy */}
 					</a>
 				</section>
 				<section className="MenuArea">
-					<Router>
+					{/* 					<Router>
 						<ul>
 							<li>
 								<Link to="/">Home</Link>
@@ -35,7 +35,7 @@ export default function Navigation() {
 								<Link to="/contact">Contact</Link>
 							</li>
 						</ul>
-					</Router>
+					</Router> */}
 				</section>
 			</nav>
 		</header>
