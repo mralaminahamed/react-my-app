@@ -29,19 +29,14 @@ function App() {
 							<Route path="/" element={<Home />} />
 							<Route path="/about" element={<About />} />
 							<Route path="/products" element={<Products />} />
-
-							{/* <Route path="/" element={<Home />}>
-								<Route path="about" element={<About />} />
-								<Route path="products" element={<Products />} />
-								<Route
-									path="*"
-									element={
-										<main style={{ padding: "1rem" }}>
-											<p>There's nothing here!</p>
-										</main>
-									}
-								/>
-							</Route> */}
+							<Route
+								path="*"
+								element={
+									<main style={{ padding: "1rem" }}>
+										<p>There's nothing here!</p>
+									</main>
+								}
+							/>
 						</Routes>
 					</section>
 				</main>
