@@ -1,8 +1,9 @@
+/* external deps */
 import { Routes, Route, Link } from "react-router-dom";
 
-function Home() {
-	return <h1>Welcome to home page</h1>;
-}
+/* internal deps */
+import Home from "../pages/Home";
+
 function About() {
 	return <h1>About</h1>;
 }
@@ -15,7 +16,7 @@ function Products() {
 
 export default function Container() {
 	return (
-		<main className="main">
+		<main>
 			<section className="container">
 				<Routes>
 					<Route path="/" element={<Home />} />
