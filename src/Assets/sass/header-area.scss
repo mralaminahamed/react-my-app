@@ -37,10 +37,10 @@
     display: flex;
     flex-direction: row;
     
-    margin-right: 20px;
+    margin-right: 10px;
 
     & a {
-      padding: 28px 0;
+      padding: 28px 10px;
       color: var(--menu-text-color);
 
       width: auto;
@@ -58,6 +58,10 @@
         background-color: rgba(#0577cc, 0.1);
         border-bottom: 2px solid var(--brand-color);
       }
+
+    &:last-child {
+      padding-right: 0;
+    }
     }
 
     &:last-child {
