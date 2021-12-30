@@ -18,7 +18,15 @@ export default function Navigation() {
 				<section className="MenuArea">
 					{/* <Router> */}
 					<ul>
-						<li>
+						{routes.map((route) => (
+							<li>
+								<Link to={`${route.url}`} key={route.number}>
+									{route.title}
+								</Link>
+							</li>
+						))}
+
+						{/* <li>
 							<Link to="/">Home</Link>
 						</li>
 						<li>
@@ -35,7 +43,7 @@ export default function Navigation() {
 						</li>
 						<li>
 							<Link to="/contact">Contact</Link>
-						</li>
+						</li> */}
 					</ul>
 					{/* </Router> */}
 				</section>

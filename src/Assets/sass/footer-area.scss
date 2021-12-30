@@ -6,5 +6,5 @@ footer {
 }
 
 footer, .footer * {  
-    color: #fff;
+    color: var(--fallback-text-color);
 }

@@ -1,7 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 function Home() {
-	return <h1>test</h1>;
+	return <h1>Welcome to home page</h1>;
 }
 function About() {
 	return <h1>About</h1>;
@@ -17,24 +17,23 @@ export default function Container() {
 	return (
 		<main className="main">
 			<section className="container">
-				<BrowserRouter>
-					<Routes>
-						<Route path="/" element={<Home />}>
-							<Route path="about" element={<About />} />
-							<Route path="products" element={<Products />} />
-							<Route
-								path="*"
-								element={
-									<main style={{ padding: "1rem" }}>
-										<p>There's nothing here!</p>
-									</main>
-								}
-							/>
-						</Route>
-					</Routes>
-				</BrowserRouter>
-				, This is body section This is body section
-				<br />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/products" element={<Products />} />
+					<Route
+						path="*"
+						element={
+							<main style={{ padding: "1rem" }}>
+								<p>
+									Content not found <br />
+									Please try again or visit
+									<Link to="/">Home</Link>
+								</p>
+							</main>
+						}
+					/>
+				</Routes>
 			</section>
 		</main>
 	);
