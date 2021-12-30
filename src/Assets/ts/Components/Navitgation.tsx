@@ -16,7 +16,6 @@ export default function Navigation() {
 					</Link>
 				</section>
 				<section className="MenuArea">
-					{/* <Router> */}
 					<ul>
 						{routes.map((route) => (
 							<li key={route.number}>
@@ -25,27 +24,7 @@ export default function Navigation() {
 								</Link>
 							</li>
 						))}
-
-						{/* <li>
-							<Link to="/">Home</Link>
-						</li>
-						<li>
-							<Link to="/about">About</Link>
-						</li>
-						<li>
-							<Link to="/products">Products</Link>
-						</li>
-						<li>
-							<Link to="/services">Services</Link>
-						</li>
-						<li>
-							<Link to="/blogs">Blogs</Link>
-						</li>
-						<li>
-							<Link to="/contact">Contact</Link>
-						</li> */}
 					</ul>
-					{/* </Router> */}
 				</section>
 			</nav>
 		</header>
