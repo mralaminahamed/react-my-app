@@ -5,6 +5,9 @@
 @import "./header-area.scss";
 @import "./footer-area.scss";
 
+/* add responsive stylesheets for all components */
+@import "./responsive/header-area.scss";
+
 
 .container {
   max-width: 1366px;

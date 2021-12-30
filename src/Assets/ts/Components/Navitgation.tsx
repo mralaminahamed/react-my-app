@@ -25,6 +25,11 @@ export default function Navigation() {
 							</li>
 						))}
 					</ul>
+					<span className="humberger-icon">
+						<div className="line"></div>
+						<div className="line"></div>
+						<div className="line"></div>
+					</span>
 				</section>
 			</nav>
 		</header>

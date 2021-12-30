@@ -24,6 +24,12 @@
   }
 }
 
+.MenuArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 
 
 .MenuArea ul {
@@ -61,4 +67,55 @@
       margin-right: 0;
     }
   }
+}
+
+
+/* humberger */
+/* https://codepen.io/sitanotern1337/pen/xyQppZ */
+
+.humberger-icon {
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  float: left;
+  transition: opacity 300ms;
+  display: none;
+}
+
+.humberger-icon:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.humberger-icon .line{
+  width: 30px;
+  height: 3px;
+  background: rgb(236, 66, 66);
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.humberger-icon .line:nth-child(1) {
+  background-color: var(--brand-color);
+}
+
+.humberger-icon .line:nth-child(2) {
+  background-color: rgba(#0577cc, 0.5);
+}
+
+.humberger-icon .line:nth-child(3) {
+  background-color: var(--brand-color);
+}
+
+.humberger-icon.isactive .line:nth-child(2) {
+  opacity: 0;
+}
+
+.humberger-icon.isactive .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.humberger-icon.isactive .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
 }
