@@ -19,7 +19,7 @@ export default function Navigation() {
 					{/* <Router> */}
 					<ul>
 						{routes.map((route) => (
-							<li>
+							<li key={route.number}>
 								<Link to={`${route.url}`} key={route.number}>
 									{route.title}
 								</Link>
