@@ -11,6 +11,12 @@ html {
   overflow-y: scroll;
 }
 
+main, header, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 main {
   width: 100%;
@@ -19,19 +25,11 @@ main {
   height: auto;
 
   margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 header {
   width: 100%;
   height: 80px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   
   background-color: var(--header-bg-color);
   border-bottom: 1px solid var(--body-bg-color);

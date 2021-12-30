@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
 
+import routes from "../../../routes.json";
+
 export default function Navigation() {
 	return (
 		<header>
-			<nav className="navigation">
+			<nav className="container navigation">
 				<section className="BrandArea">
 					<Link to="/">
-						<img
-							src="https://diviedge.com/layout-design/design-005/wp-content/uploads/sites/4/2021/01/Logo.png"
+						{/* <img
+							src="https://www.mishusoft.com/favicon.ico"
 							alt="logo"
-						/>
-						{/* Anatomy */}
+						/> */}
+						Anatomy
 					</Link>
 				</section>
 				<section className="MenuArea">

@@ -1,10 +1,3 @@
-
-.navigation {
-  max-width: 1366px;
-  width: inherit;
-  height: inherit;
-}
-
 /* .navigation:hover {
   box-shadow: 0 8px 14px 0 rgba(0, 0, 0, .25);
 } */
@@ -26,6 +19,7 @@
     font-size: 30px;
     font-weight: 800;
     text-transform: uppercase;
+    color: var(--brand-color);
 
     display: flex;
     flex-direction: row;
@@ -35,11 +29,6 @@
 }
 
 
-.MenuArea ul, .navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
 .MenuArea ul {
   list-style: none;
@@ -53,9 +42,21 @@
     & a {
       padding: 28px 0;
 
+      width: auto;
+      min-width: 80px;
+
       font-size: 16px;
       font-weight: 600;
-      width: auto;
+      text-align: center;
+
+      /* text-transform: uppercase; */
+      text-transform: capitalize;
+
+      &:hover, &:active, &:focus {
+        /* added brand color */
+        background-color: rgba(#0577cc, 0.1);
+        border-bottom: 2px solid var(--brand-color);
+      }
     }
 
     &:last-child {

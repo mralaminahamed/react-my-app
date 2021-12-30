@@ -3,8 +3,18 @@
 
 /* add dependencies for componenet base design */
 @import "./header-area.scss";
+@import "./footer-area.scss";
 
 
-footer {
-  text-align: center;
+.container {
+  max-width: 1366px;
+  width: inherit;
+  height: inherit;
+}
+
+
+.MenuArea ul, .navigation, .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
